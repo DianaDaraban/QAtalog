@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QAtalog
 
-## Getting Started
+> Test management and bug tracking for small QA teams.
 
-First, run the development server:
+**Status:** work in progress
+
+## About
+
+QAtalog helps a QA team keep projects, test cases, test runs and bug reports in one place, with a dashboard that shows how a release is doing. It is built as a full-stack TypeScript project with authentication, roles, a relational database and automated tests.
+
+## Features
+
+- [ ] Authentication with roles (admin, tester)
+- [ ] Projects
+- [ ] Test cases with steps and expected results
+- [ ] Test runs with pass / fail / blocked results
+- [ ] Bug reports linked to test results
+- [ ] Dashboard with pass rate and open bugs by severity
+- [ ] Automated tests (unit and end-to-end) and CI
+- [ ] Live demo with a demo account
+
+## Tech stack
+
+| Area | Technology |
+| --- | --- |
+| Framework | Next.js (App Router), React, TypeScript |
+| Database | PostgreSQL, Prisma |
+| Authentication | Auth.js |
+| Validation | Zod |
+| Testing | Vitest, React Testing Library, Playwright |
+| CI/CD | GitHub Actions, Vercel |
+
+## Getting started
+
+### Prerequisites
+
+- Node.js (LTS)
+- A PostgreSQL database
+
+### Installation
+
+```bash
+git clone https://github.com/DianaDaraban/qatalog.git
+cd qatalog
+npm install
+```
+
+### Environment variables
+
+Copy `.env.example` to `.env` and fill in the values:
+
+```
+DATABASE_URL=
+AUTH_SECRET=
+```
+
+### Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+_To be added._
 
-## Learn More
+## Roadmap
 
-To learn more about Next.js, take a look at the following resources:
+- Screenshots on bug reports
+- Comments on bugs
+- CSV export
+- AI-assisted bug report triage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Diana Dărăban — [GitHub](https://github.com/DianaDaraban) · [Portfolio](https://dianadaraban.netlify.app/)
